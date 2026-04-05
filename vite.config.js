@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 
 // Cambiar 'pipitos-finance' por el nombre de tu repo en GitHub
-const REPO_NAME = 'pipitos-finance'
+const REPO_NAME = 'finance-app'
 
 export default defineConfig({
   base: `/${REPO_NAME}/`,

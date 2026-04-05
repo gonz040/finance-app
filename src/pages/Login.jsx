@@ -111,7 +111,7 @@ export default function Login() {
       </div>
 
       <p className="mt-6 text-xs text-center max-w-xs" style={{ color: '#CA8E82' }}>
-        Los datos se guardan en tu Google Sheet personal. No almacenamos nada en servidores propios.
+        Si no podés pagar, consultá los métodos de pago disponibles...
       </p>
     </div>
   )

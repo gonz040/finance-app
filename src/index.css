@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #F2E7DD;
+    color: #292421;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+    font-family: Georgia, serif;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white rounded-2xl p-4;
+    border: 1px solid #D9B99F40;
+    box-shadow: 0 1px 8px 0 #A75F3710;
+  }
+  .btn-primary {
+    background-color: #A75F37;
+    @apply text-white font-semibold py-3 px-6 rounded-xl transition-colors;
+  }
+  .btn-primary:active { background-color: #8a4d2c; }
+
+  .btn-secondary {
+    background-color: #F2D6CE;
+    color: #292421;
+    @apply font-semibold py-3 px-6 rounded-xl transition-colors;
+  }
+  .btn-secondary:active { background-color: #D9B99F; }
+
+  .btn-danger {
+    background-color: #CA8E82;
+    @apply text-white font-semibold py-3 px-6 rounded-xl transition-colors;
+  }
+  .btn-danger:active { background-color: #b07268; }
+
+  .input-field {
+    @apply w-full rounded-xl px-4 py-3 text-sm bg-white focus:outline-none focus:ring-2 transition-all;
+    border: 1px solid #D9B99F;
+    color: #292421;
+    focus-ring-color: #A75F37;
+  }
+  .input-field:focus {
+    border-color: #A75F37;
+    box-shadow: 0 0 0 2px #A75F3730;
+  }
+
+  .label {
+    @apply block text-xs font-semibold uppercase tracking-wide mb-1;
+    color: #7A958F;
+  }
+
+  .fab {
+    @apply fixed bottom-24 right-4 w-14 h-14 rounded-full shadow-lg flex items-center justify-center text-2xl z-10 transition-colors text-white;
+    background-color: #A75F37;
+  }
+  .fab:active { background-color: #8a4d2c; }
+
+  .badge-fijo {
+    background-color: #BAE0DA;
+    color: #7A958F;
+    @apply text-xs font-semibold px-2 py-0.5 rounded-full;
+  }
+  .badge-cuota {
+    background-color: #F2D6CE;
+    color: #CA8E82;
+    @apply text-xs font-semibold px-2 py-0.5 rounded-full;
+  }
+  .badge-variable {
+    background-color: #D9B99F40;
+    color: #A75F37;
+    @apply text-xs font-semibold px-2 py-0.5 rounded-full;
+  }
+}
+
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 16px);
+}
